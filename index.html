@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>urbandecay-renewal</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.min.js"></script>
+    <script src="https://kit.fontawesome.com/d1dbd1f9d9.js" crossorigin="anonymous"></script>
+    <script>
+        $(document).ready(function () {
+            $('.slider').bxSlider({
+                speed: 300,
+                auto: true,
+                controls: false,
+
+            });
+        });
+
+        $(".hover").mouseleave(
+            function () {
+                $(this).removeClass("hover");
+            }
+        );
+    </script>
+</head>
+
+<body>
+    <header>
+        <div class="header-top">
+            <div class="header-top-menu">
+                <a href="">LOGIN</a>
+                <a href="">JOIN</a>
+                <a href="">CART <i class="fas fa-shopping-cart"></i></a>
+            </div>
+        </div>
+        <div class="header-logo">
+            <h1>URBANDECAY</h1>
+        </div>
+        <div class="header-menu">
+            <a class="menu-point">SALE</a>
+            <a class="menu-point">BEST</a>
+            <a>NEW</a>
+            <a>EVEVT</a>
+            <a>EYE</a>
+            <a>LIP</a>
+            <a>FACE</a>
+            <a>ONLY URBANDECAY</a>
+            <form class="search-form">
+                <input class="search-input" type="text">
+                <i class="fas fa-search"></i>
+            </form>
+        </div>
+    </header>
+
+    <container>
+        <ul class="slider">
+            <li><a href="#"><img src="./img/event_pc.jpg" alt="" title="event1"></a></li>
+            <li><a href="#"><img src="./img/event2_pc.jpg" alt="" title="event2"></a></li>
+            <li><a href="#"><img src="./img/event3_pc.jpg" alt="" title="event3"></a></li>
+            <li><a href="#"><img src="./img/event4_pc.jpg" alt="" title="event4"></a></li>
+        </ul>
+    </container>
+
+    <container>
+        <div class="container__header">
+            <h1>BEST SELLER</h1>
+        </div>
+        <ul class="best-container">
+            <li class="best-item">
+                <img src="./img/best-item.jpg" alt="">
+                <h3>문더스트 글리터 아이섀도우</h3>
+            </li>
+            <li class="best-item">
+                <img src="./img/best-item2.jpg" alt="">
+                <h3>문더스트 글리터 아이섀도우</h3>
+            </li>
+            <li class="best-item">
+                <img src="./img/best-item3.jpg" alt="">
+                <h3>문더스트 글리터 아이섀도우</h3>
+            </li>
+        </ul>
+    </container>
+
+    <container>
+        <div class="container__header">
+            <h1>NEW ITEM</h1>
+        </div>
+        <ul class="best-container">
+            <li class="best-item">
+                <img src="./img/new-item.jpg" alt="">
+                <h3>문더스트 글리터 아이섀도우</h3>
+            </li>
+            <li class="best-item">
+                <img src="./img/new-item2.jpg" alt="">
+                <h3>문더스트 글리터 아이섀도우</h3>
+            </li>
+            <li class="best-item">
+                <img src="./img/new-item3.png" alt="">
+                <h3>문더스트 글리터 아이섀도우</h3>
+            </li>
+            <li class="best-item">
+                <img src="./img/new-item4.jpg" alt="">
+                <h3>문더스트 글리터 아이섀도우</h3>
+            </li>
+        </ul>
+    </container>
+
+    <container>
+        <div class="container__header">
+            <h1>URBANDECAY MEMBERSHIP</h3>
+                <h3>only online</h3>
+        </div>
+        <div class="list-container">
+            <ul class="list list-top">
+                <li>
+                    <img src="./img/membership-list1.jpg" alt="">
+                    <h4>서프라이즈 세일</h4>
+                </li>
+                <li>
+                    <img src="./img/membership-list2.jpg" alt="">
+                    <h4>무료배송</h4>
+                </li>
+                <li>
+                    <img src="./img/membership-list3.jpg" alt="">
+                    <h4>베스트 리뷰어</h4>
+                </li>
+                <li>
+                    <img src="./img/membership-list4.jpg" alt="">
+                    <h4>BIRTHDAY</h4>
+                </li>
+            </ul>
+            <ul class="list list-bottom">
+                <li>
+                    <img src="./img/membership-list5.jpg" alt="">
+                    <h4>재구매혜택</h4>
+                </li>
+                <li>
+                    <img src="./img/membership-list6.jpg" alt="">
+                    <h4>선물포장</h4>
+                </li>
+                <li>
+                    <img src="./img/membership-list8.jpg" alt="">
+                    <h4>ONLY ONLINE</h4>
+                </li>
+                <li>
+                    <img src="./img/membership-list9.jpg" alt="">
+                    <h4>VIP</h4>
+                </li>
+            </ul>
+        </div>
+    </container>
+
+    <footer>
+        <div class="footer-top">
+            <div class="footer-menu">
+                <a href="">
+                    <h3>서비스 이용약관</h3>
+                </a>
+                <a href="">
+                    <h3>개인정보처리방침</h3>
+                </a>
+                <a href="">
+                    <h3>공지사항</h3>
+                </a>
+                <a href="">
+                    <h3>사이트맵</h3>
+                </a>
+            </div>
+            <div class="footer-menu__sns">
+                <a href="https://www.youtube.com/user/UrbanDecayYT">
+                    <p><i class="fab fa-youtube"></i></p>
+                </a>
+                <a href="https://www.facebook.com/login/?next=https%3A%2F%2Fwww.facebook.com%2FurbandecayKR%2F">
+                    <p><i class="fab fa-facebook"></i></p>
+                </a>
+                <a href="https://www.instagram.com/accounts/login/#">
+                    <p><i class="fab fa-instagram"></i></p>
+                </a>
+                <a href="https://twitter.com/urbandecay">
+                    <p><i class="fab fa-twitter"></i></p>
+                </a>
+                <a href="https://urbandecay.tumblr.com/">
+                    <p><i class="fab fa-tumblr"></i></p>
+                </a>
+                <a href="https://www.pinterest.co.kr/urbandecay/_shop/">
+                    <p><i class="fab fa-pinterest-p"></i></p>
+                </a>
+            </div>
+        </div>
+        <h1 class="footer-logo">URBANDECAY</h1>
+        <div class="footer-bottom">
+            <div class="footer-bottom__left">
+                <h3>사업자명: 엘오케이(유) | 대표: 크리스티앙 마르코스 아르나이</h3>
+                <h3>사업자 등록번호: 220-81-73483 (사업자정보 확인)</h3>
+                <h3>주소: 서울특별시 강남구 영동대로 517 아셈타워 31층</h3>
+                <h3>통신판매업신고: 2012-서울강남-01663 | 개인정보보호 책임자: 이윤진</h3>
+
+                <h3 class="bottom__p"><strong>퍼스트데이터코리아(유) 서비스가맹점</strong></h3>
+                <h3>고객님은 안전한 전자상거래를 위해 저희 쇼핑몰에서 가입한
+                    퍼스트데이터코리아(유)의 구매안전 서비스를 이용할 수 있습니다.</h3>
+
+                <h3 class="bottom__p">Copyright © Urban Decay Cosmetics. All rights reserved.</h3>
+            </div>
+            <div class="footer-bottom__right">
+                <h2>고객 케어 센터</h2>
+                <div class="bottom__tel">
+                    <h1>080-835-0100</h1>
+                    <h3>( 배송/구매/사이트 문의 )</h3>
+                </div>
+                <div class="bottom__tel">
+                    <h1>080-835-0099</h1>
+                    <h3>( 제품 문의 )</h3>
+                </div>
+                <h4 class="bottom__time">운영시간 AM 09:30 ~ PM 17:30 (주말 및 공휴일 휴무)</h4>
+                <h4 class="bottom__time2">점심시간 PM 12:30 ~ PM 13:30</h4>
+            </div>
+        </div>
+    </footer>
+</body>
+
+</html>

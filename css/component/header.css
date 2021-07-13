@@ -1,0 +1,53 @@
+.header-top-menu {
+    margin-left: 85%;
+    margin-top: 8px;
+    margin-bottom: 8px;
+}
+
+.header-top-menu a {
+    margin: 0px 4px;
+}
+
+.header-logo {
+    background-color: #3f0267;
+    height: 120px;
+}
+
+.header-logo h1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: xx-large;
+    font-weight: 600;
+    color: #fff;
+    line-height: 120px;
+}
+
+.header-menu {
+    display: flex;
+    justify-content: space-between;
+    margin: 10px 170px;
+}
+
+.header-menu a {
+    font-size: 18px;
+}
+
+.header-menu a:hover {
+    color: #c9a0e4;
+}
+
+.menu-point {
+    color: #55068a;
+}
+
+.search-input {
+    width: 200px;
+    border: none;
+    border-bottom: 1px solid rgba(49, 49, 49, 0.4);
+    transition: #55068a 0.3s ease-in-out;
+}
+
+.search-form i {
+    font-size: 20px;
+}
