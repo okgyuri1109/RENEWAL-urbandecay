@@ -1,6 +1,13 @@
 ## URBANDECAY-RENEWAL PROJECT
 -매주 수요일 마다 작업
 
+# 2021/07/21
+- color
+    - main : #55068a
+    - serve : #ddcae9 #c9a0e4
+    - gray : #898989
+- index.html 마우스 오버 기능들
+
 # 2021/07/07
 - index.html footer작업
 - 세부적인 기획 구상

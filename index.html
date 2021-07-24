@@ -8,25 +8,6 @@
     <title>urbandecay-renewal</title>
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.css">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.min.js"></script>
-    <script src="https://kit.fontawesome.com/d1dbd1f9d9.js" crossorigin="anonymous"></script>
-    <script>
-        $(document).ready(function () {
-            $('.slider').bxSlider({
-                speed: 300,
-                auto: true,
-                controls: false,
-
-            });
-        });
-
-        $(".hover").mouseleave(
-            function () {
-                $(this).removeClass("hover");
-            }
-        );
-    </script>
 </head>
 
 <body>
@@ -43,8 +24,7 @@
         </div>
         <div class="header-menu">
             <a class="menu-point">SALE</a>
-            <a class="menu-point">new</a>
-            <a>NEW</a>
+            <a class="menu-point">NEW</a>
             <a>EVEVT</a>
             <a>EYE</a>
             <a>LIP</a>
@@ -70,35 +50,14 @@
         <div class="container__header">
             <h1>BEST SELLER</h1>
         </div>
-        <ul class="new-container">
-            <li class="new-item">
-                <figure class="best-item">
-                    <img src="./img/best-item.jpg" alt="sample70" />
-                    <figcaption>
-                        <h3>문더스트 글리터 아이섀도우</h3>
-                        <p>27000\</p>
-                    </figcaption>
-                </figure>
-            </li>
-            <li class="new-item">
-                <figure class="best-item">
-                    <img src="./img/best-item2.jpg" alt="sample70" />
-                    <figcaption>
-                        <h3>문더스트 글리터 아이섀도우</h3>
-                        <p>27000\</p>
-                    </figcaption>
-                </figure>
-            </li>
-            <li class="new-item">
-                <figure class="best-item">
-                    <img src="./img/best-item3.jpg" alt="sample70" />
-                    <figcaption>
-                        <h3>문더스트 글리터 아이섀도우</h3>
-                        <p>27000\</p>
-                    </figcaption>
-                </figure>
-            </li>
-        </ul>
+        <div class="container">
+            <img class="img-city" src="./img/best-item.jpg" onmouseenter="zoomIn(event)"
+                onmouseleave="zoomOut(event)" />
+            <img class="img-city" src="./img/best-item2.jpg" onmouseenter="zoomIn(event)"
+                onmouseleave="zoomOut(event)" />
+            <img class="img-city" src="./img/best-item3.jpg" onmouseenter="zoomIn(event)"
+                onmouseleave="zoomOut(event)" />
+        </div>
     </container>
 
     <container>
@@ -155,8 +114,8 @@
 
     <container>
         <div class="container__header">
+            <h3>only online</h3>
             <h1>URBANDECAY MEMBERSHIP</h3>
-                <h3>only online</h3>
         </div>
         <div class="list-container">
             <ul class="list list-top">
@@ -265,13 +224,48 @@
         </div>
     </footer>
 </body>
+<!-- box slider -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+<script src="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.min.js"></script>
+<script src="https://kit.fontawesome.com/d1dbd1f9d9.js" crossorigin="anonymous"></script>
 <script>
-    $('.new-item__hidden').hide();
-    $('.content-hover').hover( function() {
-            $('.new-item__hidden').show();
-        }, function() {
-            $('.new-item__hidden').hide();
+    $(document).ready(function () {
+        $('.slider').bxSlider({
+            speed: 300,
+            auto: true,
+            controls: false,
+
         });
+    });
+
+    $(".hover").mouseleave(
+        function () {
+            $(this).removeClass("hover");
+        }
+    );
 </script>
+<!-- best item -->
+<script>
+    function zoomIn(event) {
+        event.target.style.transform = "scale(1.2)";
+        event.target.style.zIndex = 1;
+        event.target.style.transition = "all 0.5s";
+    }
+
+    function zoomOut(event) {
+        event.target.style.transform = "scale(1)";
+        event.target.style.zIndex = 0;
+        event.target.style.transition = "all 0.5s";
+    }
+</script>
+<!-- new item -->
+<!-- <script>
+    $('.new-item__hidden').hide();
+    $('.content-hover').hover(function () {
+        $('.new-item__hidden').show();
+    }, function () {
+        $('.new-item__hidden').hide();
+    });
+</script> -->
 
 </html>

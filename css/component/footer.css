@@ -28,6 +28,10 @@
     margin-left: 18px;
 }
 
+.footer-menu__sns p:hover {
+    color: #55068a;
+}
+
 .footer-logo {
     font-size: 40px;
     margin: 10px 0px 10px 50px;

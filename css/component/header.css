@@ -17,10 +17,11 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    font-size: xx-large;
-    font-weight: 600;
+    font-size: 36px;
+    font-weight: 200;
     color: #fff;
     line-height: 120px;
+    font-family: 'Zen Tokyo Zoo', cursive;
 }
 
 .header-menu {
@@ -35,6 +36,7 @@
 
 .header-menu a:hover {
     color: #c9a0e4;
+    cursor: pointer;
 }
 
 .menu-point {
@@ -45,9 +47,18 @@
     width: 200px;
     border: none;
     border-bottom: 1px solid rgba(49, 49, 49, 0.4);
-    transition: #55068a 0.3s ease-in-out;
 }
+
+/* .search-input:hover {
+    border-bottom: 1px solid #55068a;
+    transition: 0.3s ease-in-out;
+} */
 
 .search-form i {
     font-size: 20px;
 }
+
+.search-form i:hover {
+    cursor: pointer;
+}
+
