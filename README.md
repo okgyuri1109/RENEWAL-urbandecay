@@ -2,11 +2,13 @@
 -매주 수요일 마다 작업
 
 # 2021/07/21
+- index.html footer작업
 - color
     - main : #55068a
     - serve : #ddcae9 #c9a0e4
     - gray : #898989
-- index.html 마우스 오버 기능들
+- 마우스 hover 기능들
+    1. best-item
 
 # 2021/07/07
 - index.html footer작업
