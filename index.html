@@ -67,13 +67,10 @@
         <ul class="new-container">
             <li class="new-item">
                 <div class="content-hover">
-                    <img src="./img/new-item.jpg" alt="" class="content-hover">
+                    <img src="./img/new-item.jpg" alt="">
                 </div>
                 <div class="new-item__hidden">
-                    <div>
-                        <h3>문더스트 글리터 아이섀도우</h3>
-                        <h3>27000\</h3>
-                    </div>
+                    <img src="./img/hidden-new-item.jpg" alt="">
                 </div>
             </li>
             <li class="new-item">
@@ -81,10 +78,7 @@
                     <img src="./img/new-item2.jpg" alt="">
                 </div>
                 <div class="new-item__hidden">
-                    <div>
-                        <h3>문더스트 글리터 아이섀도우</h3>
-                        <h3>27000\</h3>
-                    </div>
+                    <img src="./img/hidden-new-item2.jpg" alt="">
                 </div>
             </li>
             <li class="new-item">
@@ -92,10 +86,7 @@
                     <img src="./img/new-item4.jpg" alt="">
                 </div>
                 <div class="new-item__hidden">
-                    <div>
-                        <h3>문더스트 글리터 아이섀도우</h3>
-                        <h3>27000\</h3>
-                    </div>
+                    <img src="./img/hidden-new-item4.jpg" alt="">
                 </div>
             </li>
             <li class="new-item">
@@ -103,10 +94,7 @@
                     <img src="./img/new-item3.png" alt="">
                 </div>
                 <div class="new-item__hidden">
-                    <div>
-                        <h3>문더스트 글리터 아이섀도우</h3>
-                        <h3>27000\</h3>
-                    </div>
+                    <img src="./img/hidden-new-item3.jpg" alt="">
                 </div>
             </li>
         </ul>
@@ -187,7 +175,6 @@
                 <a href="">
                     <i>어반디케이 오프라인 매장 찾기 >></i>
                 </a>
-
             </div>
             <div class="footer-content">
                 <h2>about URBANDECAY</h2>
@@ -246,8 +233,7 @@
                 <h3><strong>퍼스트데이터코리아(유) 서비스가맹점</strong></h3>
                 <h3>서울시 강남구 영동대로 517 아셈타워 31층 | 사업자등록번호 : 000-12-34567 | 통신판매신고번호 : 2012-서울강남-01663 | 대표자 : 크리스티앙 마르코스
                     아르나이</h3>
-                <h3 class="footer-info__copyright">Copyright © Urban Decay Cosmetics. All rights reserved.</h3>
-
+                <h3 class="footer-info__copyright">Copyright © Urban Decay Cosmetics.</h3>
                 <div class="footer-info__button">
                     <a href="">
                         <p>서비스 이용약관</p>
@@ -279,9 +265,7 @@
             $(this).removeClass("hover");
         }
     );
-</script>
-<!-- best item -->
-<script>
+
     function zoomIn(event) {
         event.target.style.transform = "scale(1.2)";
         event.target.style.zIndex = 1;
@@ -293,8 +277,18 @@
         event.target.style.zIndex = 0;
         event.target.style.transition = "all 0.5s";
     }
+
+    const nbox = document.querySelectorAll(".new-item");
+    for (let i = 0; i < nbox.length; i++) {
+        nbox[i].addEventListener("mouseenter", function () {
+            nbox[i].classList.add("flipped");
+        });
+        nbox[i].addEventListener("mouseleave", function () {
+            nbox[i].classList.remove("flipped");
+        });
+    }
 </script>
-<!-- new item -->
+
 <!-- <script>
     $('.new-item__hidden').hide();
     $('.content-hover').hover(function () {

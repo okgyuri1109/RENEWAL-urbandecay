@@ -174,3 +174,18 @@
     margin-right: 4px;
     padding: 1px;
 }
+
+@media screen and (max-width:940px) {
+    .footer-bottom {
+        margin: 20px 0px;
+        padding: 0px 20px;
+    }
+
+    .footer-sns {
+        padding-right: 15px;
+    }
+
+    .footer-info h3 {
+        font-size: 8px;
+    }
+}

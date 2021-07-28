@@ -1,10 +1,15 @@
 ## URBANDECAY-RENEWAL PROJECT
 -매주 수요일 마다 작업
 
+# 2021/07/28
+- 마우스 hover 기능들
+    1. new-item
+-javascript 기초
+
 # 2021/07/21
 - index.html footer작업
 - color
-    - main : #55068a
+    - main : #3f0267
     - serve : #ddcae9 #c9a0e4
     - gray : #898989
 - 마우스 hover 기능들

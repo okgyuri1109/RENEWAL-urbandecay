@@ -33,7 +33,13 @@
 .new-item {
     margin: 8px;
     text-align: center;
-    position: relative;
+    transform-style: preserve-3d;
+    transition: transform 0.8s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    
+}
+
+.new-item div {
+    backface-visibility: hidden;
 }
 
 .new-item img {
@@ -46,31 +52,15 @@
     color: #2a2a2a;
 }
 
-/* .content-hover {
-    z-index: 99999;
-}
-
-.content-hover:hover {
-    animation: fadeout 0.5s;
-    -webkit-animation: fadeout 0.5s;
-    animation-fill-mode: forwards;
-}  */
-
-@keyframes fadeout { 
-    from {
-        opacity: 1;
-    }
-    to {
-        opacity: 0;
-    }
-}
-
 .new-item__hidden {
     position: absolute;
-    top: 50%;
-	left: 50%;
-	transform: translate( -50%, -100% );
+    top: 0%;
     height: 30%;
+    transform: rotateY(180deg);
+}
+
+.flipped {
+    transform: rotateY(180deg);
 }
 
 /******membership-list******/

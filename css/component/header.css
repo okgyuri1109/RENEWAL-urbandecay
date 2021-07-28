@@ -1,7 +1,9 @@
 .header-top-menu {
-    margin-left: 85%;
     margin-top: 8px;
     margin-bottom: 8px;
+    margin-right: 2%;
+    display: flex;
+    justify-content: flex-end
 }
 
 .header-top-menu a {
@@ -27,7 +29,7 @@
 .header-menu {
     display: flex;
     justify-content: space-between;
-    margin: 10px 170px;
+    margin: 10px 10%;
 }
 
 .header-menu a {
@@ -62,3 +64,20 @@
     cursor: pointer;
 }
 
+@media screen and (max-width:940px) {
+    .header-top-menu a {
+        font-size: 10px;
+    }
+
+    .header-menu {
+        margin: 10px 5%;
+    }
+
+    .header-menu a {
+        font-size: 12px;
+    }
+
+    .search-form input {
+        display: none;
+    }
+}
