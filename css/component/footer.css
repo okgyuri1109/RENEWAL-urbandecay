@@ -104,7 +104,7 @@
 }
 
 .sub-email button {
-    background-color: #e8dcf0;
+    background-color: #eae4ee;
     border: 1px solid #565656;
     border-radius: 2px;
 }
@@ -173,6 +173,7 @@
     border: 1px solid #000000;
     margin-right: 4px;
     padding: 1px;
+    border-radius: 2px;
 }
 
 @media screen and (max-width:940px) {

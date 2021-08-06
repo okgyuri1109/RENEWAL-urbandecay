@@ -3,7 +3,6 @@
 
 # 2021/07/28
 - 마우스 hover 기능들
-    1. new-item
 -javascript 기초
 
 # 2021/07/21

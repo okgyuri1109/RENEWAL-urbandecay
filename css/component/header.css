@@ -3,7 +3,7 @@
     margin-bottom: 8px;
     margin-right: 2%;
     display: flex;
-    justify-content: flex-end
+    justify-content: flex-end;
 }
 
 .header-top-menu a {
@@ -30,6 +30,10 @@
     display: flex;
     justify-content: space-between;
     margin: 10px 10%;
+    background-color: #fff;
+    position: relative;
+    z-index: 20;
+
 }
 
 .header-menu a {
@@ -62,6 +66,22 @@
 
 .search-form i:hover {
     cursor: pointer;
+}
+
+/*상단바 고정*/
+
+header.sticky .header-menu {
+    position: fixed;
+    margin: 30px 10%;
+    background-color: #3f0267;
+}
+
+header.sticky .header-menu a {
+    color: #ffffff;
+}
+
+header.sticky .search-input {
+    border-bottom: 1px solid #ffffff;
 }
 
 @media screen and (max-width:940px) {

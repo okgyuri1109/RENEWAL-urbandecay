@@ -58,6 +58,64 @@
             <img class="img-city" src="./img/best-item3.jpg" onmouseenter="zoomIn(event)"
                 onmouseleave="zoomOut(event)" />
         </div>
+        <div class="container-price">
+            <div class="best-price">
+                <h3>Moondust Glitter Eyeshadow</h3>
+                <h5>29000 \</h5>
+            </div>
+            <div class="best-price">
+                <h3>Naked Honey Eye Palette</h3>
+                <h5>69000 \</h5>
+            </div>
+            <div class="best-price">
+                <h3>Vise Lipstick (29 shade)</h3>
+                <h5>32000 \</h5>
+            </div>
+        </div>
+        <div class="container cb">
+            <img class="img-city" src="./img/best-item4.jpg" onmouseenter="zoomIn(event)"
+                onmouseleave="zoomOut(event)" />
+            <img class="img-city" src="./img/best-item5.jpg" onmouseenter="zoomIn(event)"
+                onmouseleave="zoomOut(event)" />
+            <img class="img-city" src="./img/best-item6.jpg" onmouseenter="zoomIn(event)"
+                onmouseleave="zoomOut(event)" />
+        </div>
+        <div class="container-price">
+            <div class="best-price">
+                <h3>Naked 3 Eyeshadow Palette</h3>
+                <h5>69000 \</h5>
+            </div>
+            <div class="best-price">
+                <h3>Eyeshadow Primer Potion</h3>
+                <h5>32000 \</h5>
+            </div>
+            <div class="best-price">
+                <h3>Stay Liquid Foundation</h3>
+                <h5>50000 \</h5>
+            </div>
+        </div>
+        <div class="container cb">
+            <img class="img-city" src="./img/best-item7.jpg" onmouseenter="zoomIn(event)"
+                onmouseleave="zoomOut(event)" />
+            <img class="img-city" src="./img/best-item8.jpg" onmouseenter="zoomIn(event)"
+                onmouseleave="zoomOut(event)" />
+            <img class="img-city" src="./img/best-item9.jpg" onmouseenter="zoomIn(event)"
+                onmouseleave="zoomOut(event)" />
+        </div>
+        <div class="container-price">
+            <div class="best-price">
+                <h3>All Nighter Setting Spray</h3>
+                <h5>40000 \</h5>
+            </div>
+            <div class="best-price">
+                <h3>Vice Chemistry Lasting Tint</h3>
+                <h5>29000 \</h5>
+            </div>
+            <div class="best-price">
+                <h3>Heavy Metal Glitter Eyeliner</h3>
+                <h5>29000 \</h5>
+            </div>
+        </div>
     </container>
 
     <container>
@@ -98,6 +156,15 @@
                 </div>
             </li>
         </ul>
+    </container>
+
+    <container>
+        <div class="youtube-tv">
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/4avke6EsrEk"
+                title="YouTube video player" frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allowfullscreen></iframe>
+        </div>
     </container>
 
     <container>
@@ -177,7 +244,7 @@
                 </a>
             </div>
             <div class="footer-content">
-                <h2>about URBANDECAY</h2>
+                <h2>ABOUT URBANDECAY</h2>
                 <div class="footer-content__container">
                     <p>이제는 강요되는 아름다움의 기준을</p>
                     <p>‘언팔’해야 할 때 입니다.</p>
@@ -246,7 +313,7 @@
         </div>
     </footer>
 </body>
-<!-- box slider -->
+<!-- <script src="./js/jquery.min.js"></script> -->
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
 <script src="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.min.js"></script>
 <script src="https://kit.fontawesome.com/d1dbd1f9d9.js" crossorigin="anonymous"></script>
@@ -267,7 +334,7 @@
     );
 
     function zoomIn(event) {
-        event.target.style.transform = "scale(1.2)";
+        event.target.style.transform = "scale(1.4)";
         event.target.style.zIndex = 1;
         event.target.style.transition = "all 0.5s";
     }
@@ -287,15 +354,26 @@
             nbox[i].classList.remove("flipped");
         });
     }
-</script>
 
-<!-- <script>
-    $('.new-item__hidden').hide();
-    $('.content-hover').hover(function () {
-        $('.new-item__hidden').show();
-    }, function () {
-        $('.new-item__hidden').hide();
+    var $header = $('header');
+    $(window).scoll(function () {
+        if ($(this).scrollTop() > 0) {
+            $header.addClass('sticky');
+        } else {
+            $header.removeClass('sticky');
+        }
     });
-</script> -->
+    
+    //최초 로드 시 iframe 높이값 비율에 맞게 세팅
+    var $videoIframe = document.getElementById('video');
+    var responsiveHeight = $videoIframe.offsetWidth * 0.5625;
+    $videoIframe.setAttribute('height', responsiveHeight);
+
+    //브라우저 리사이즈 시 iframe 높이값 비율에 맞게 세팅
+    window.addEventListener('resize', function () {
+        responsiveHeight = $videoIframe.offsetWidth * 0.5625;
+        $videoIframe.setAttribute('height', responsiveHeight);
+    });
+</script>
 
 </html>
