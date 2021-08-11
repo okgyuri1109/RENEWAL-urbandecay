@@ -1,6 +1,12 @@
 ## URBANDECAY-RENEWAL PROJECT
 -매주 수요일 마다 작업
 
+# 2021/08/11
+- 배포 방법
+1. github
+> settings > pages > master > root
+2. netlify
+
 # 2021/07/28
 - 마우스 hover 기능들
 -javascript 기초

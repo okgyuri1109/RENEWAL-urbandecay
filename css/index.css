@@ -120,11 +120,13 @@
     align-items: flex-start;
 }
 
-.youtube-info {
+.youtube {
+    width: 560px;
+}
+
+.info {
     background-color: #eae4ee;
     padding: 3%;
-    width: 560;
-    height: 315;
 }
 
 .youtube-info h1 h2 p {

@@ -8,6 +8,15 @@
     <title>urbandecay-renewal</title>
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.css">
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-R51XBG9G0N"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+
+        gtag('config', 'G-R51XBG9G0N');
+    </script>
 </head>
 
 <body>
@@ -24,18 +33,18 @@
         </div>
         <div class="header-bottom-menu">
             <div class="header-menu">
-            <a class="menu-point">SALE</a>
-            <a class="menu-point">NEW</a>
-            <a>EVEVT</a>
-            <a>EYE</a>
-            <a>LIP</a>
-            <a>FACE</a>
-            <a>ONLY URBANDECAY</a>
-            <form class="search-form">
-                <input class="search-input" type="text">
-                <i class="fas fa-search"></i>
-            </form>
-        </div>
+                <a class="menu-point">SALE</a>
+                <a class="menu-point">NEW</a>
+                <a>EVEVT</a>
+                <a>EYE</a>
+                <a>LIP</a>
+                <a>FACE</a>
+                <a>ONLY URBANDECAY</a>
+                <form class="search-form">
+                    <input class="search-input" type="text">
+                    <i class="fas fa-search"></i>
+                </form>
+            </div>
         </div>
     </header>
 
@@ -163,13 +172,13 @@
     <container>
         <div class="container__youtube">
             <div class="youtube-tv">
-                <div>
+                <div class="youtube">
                     <iframe width="560" height="315" src="https://www.youtube.com/embed/4avke6EsrEk"
-                    title="YouTube video player" frameborder="0"
-                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                    allowfullscreen></iframe>
+                        title="YouTube video player" frameborder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                        allowfullscreen></iframe>
                 </div>
-                <div class="youtube-info">
+                <div class="youtube info">
                     <h1>몬스타엑스 X 어반디케이</h1>
                     <h2>urbandecay의 모델 몬스타엑스가 싱글즈 매거진에 다녀왔어요!</h2>
                     <p>화기애애했던 몬스타엑스 x 어반디케이 촬영 현장 비하인드를 공개합니다.</p>
@@ -377,7 +386,7 @@
             $header.removeClass('sticky');
         }
     });
-    
+
     //최초 로드 시 iframe 높이값 비율에 맞게 세팅
     var $videoIframe = document.getElementById('video');
     var responsiveHeight = $videoIframe.offsetWidth * 0.5625;
