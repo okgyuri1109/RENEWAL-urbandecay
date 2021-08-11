@@ -26,14 +26,16 @@
     font-family: 'Zen Tokyo Zoo', cursive;
 }
 
+.header-bottom-menu {
+    z-index: 20;
+    background-color: #fff;
+    position: relative;
+}
+
 .header-menu {
     display: flex;
     justify-content: space-between;
     margin: 10px 10%;
-    background-color: #fff;
-    position: relative;
-    z-index: 20;
-
 }
 
 .header-menu a {
@@ -70,10 +72,16 @@
 
 /*상단바 고정*/
 
-header.sticky .header-menu {
+/* header.sticky .header-menu {
+    display: flex;
+    justify-content: space-between;
+    z-index: 20;
     position: fixed;
-    margin: 30px 10%;
+    top: 0;
     background-color: #3f0267;
+    margin: 0;
+    padding: 10px;
+    width: 100%;
 }
 
 header.sticky .header-menu a {
@@ -82,6 +90,31 @@ header.sticky .header-menu a {
 
 header.sticky .search-input {
     border-bottom: 1px solid #ffffff;
+} */
+
+header.sticky .header-top-menu {
+    display: none;
+}
+
+header.sticky .header-logo {
+    display: none;
+}
+
+header.sticky .header-bottom-menu {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    border-bottom: 1px solid #3f0267;
+    box-shadow: 0 2px 2px -2px #2f2b31;
+}
+
+header.sticky .header-menu a {
+    padding: 4px 0;
+}
+
+header.sticky .header-menu a:hover {
+    color: #c9a0e4;
+    cursor: pointer;
 }
 
 @media screen and (max-width:940px) {
