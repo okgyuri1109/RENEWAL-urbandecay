@@ -124,13 +124,28 @@
     width: 560px;
 }
 
-.info {
+.youtube-info {
     background-color: #eae4ee;
     padding: 3%;
 }
 
-.youtube-info h1 h2 p {
-    
+.youtube-info__title {
+    padding: 2%;
+    text-align: center;
+    font-size: xx-large;
+    border-radius: 5px;
+    /* background-color: #e7e7e7; */
+}
+
+.youtube-info__title h1 {
+    color: #6a6a6a;
+}
+
+.youtube-info__text {
+    text-align: center;
+    margin-top: 2%;
+    padding: 4.5% 0;
+    border-radius: 5px;
 }
 
 /******membership-list******/

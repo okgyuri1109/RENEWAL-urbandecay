@@ -115,7 +115,7 @@
         </div>
         <div class="container-price">
             <div class="best-price">
-                <h3>All Nighter Setting Spray</h3>
+                <h3>All Night-Nighter Setting Spray</h3>
                 <h5>40000 \</h5>
             </div>
             <div class="best-price">
@@ -178,13 +178,17 @@
                         allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
                         allowfullscreen></iframe>
                 </div>
-                <div class="youtube info">
-                    <h1>몬스타엑스 X 어반디케이</h1>
-                    <h2>urbandecay의 모델 몬스타엑스가 싱글즈 매거진에 다녀왔어요!</h2>
-                    <p>화기애애했던 몬스타엑스 x 어반디케이 촬영 현장 비하인드를 공개합니다.</p>
-                    <p>촬영 틈틈이 멤버들에게 간단 인터뷰도 진행했는데요.</p>
-                    <p>그들이 뽑은 최애 제품부터! N행시, 5자 토크까지 물어보았습니다.</p>
-                    <p>지금 바로 영상을 통해 확인해 보세요!💜</p>
+                <div class="youtube-info">
+                    <div class="youtube-info__title">
+                        <h1>MONSTER X with URBANDECAY</h1>
+                    </div>
+                    <div class="youtube-info__text">
+                        <h2>urbandecay의 모델 몬스타엑스가 싱글즈 매거진에 다녀왔어요!</h2>
+                        <p>화기애애했던 몬스타엑스 x 어반디케이 촬영 현장 비하인드를 공개합니다.</p>
+                        <p>촬영 틈틈이 멤버들에게 간단 인터뷰도 진행했는데요.</p>
+                        <p>그들이 뽑은 최애 제품부터! N행시, 5자 토크까지 물어보았습니다.</p>
+                        <p>지금 바로 영상을 통해 확인해 보세요!💜</p>
+                    </div>
                 </div>
             </div>
         </div>
@@ -336,7 +340,6 @@
         </div>
     </footer>
 </body>
-<!-- <script src="./js/jquery.min.js"></script> -->
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
 <script src="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.min.js"></script>
 <script src="https://kit.fontawesome.com/d1dbd1f9d9.js" crossorigin="anonymous"></script>
@@ -380,7 +383,7 @@
 
     var $header = $('header');
     $(window).scroll(function () {
-        if ($(this).scrollTop() > 0) {
+        if ($(this).scrollTop() > 180) {
             $header.addClass('sticky');
         } else {
             $header.removeClass('sticky');
